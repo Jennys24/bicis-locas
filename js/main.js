@@ -9,9 +9,9 @@ function validarEmail(valor){
 function validateForm() {
 	$('.prevent').remove();
 	var fnombre = $('#name').val().trim();
-	if (fnombre == '') {
+	/* if (fnombre == '') {
 		$('#name').parent().append('<span class="prevent">Debes registrar un nombre</span>');
-	} else if( /^[a-zA-Z ]+$/.test(fnombre) == false){
+	} else */ if( /^[a-zA-Z ]+$/.test(fnombre) == false){
 		$('#name').parent().append('<span class="prevent">Ingresa sólo letras.</span>'); 
 	} else if(/^[A-Z]+$/.test(fnombre[0]) == false){
 		$('#name').parent().append('<span class="prevent">La primera letra debe ser mayúsculas.</span>'); 
