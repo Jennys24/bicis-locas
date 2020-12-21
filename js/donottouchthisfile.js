@@ -1,5 +1,5 @@
 var element = document.querySelector(".form-signup");
 element.addEventListener("submit", function(event) {
-  //event.preventDefault();
-  //validateForm();
+  event.preventDefault();
+  validateForm();
 });
